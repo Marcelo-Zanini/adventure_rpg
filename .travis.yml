@@ -15,6 +15,7 @@ before_script:
   - gem install bundle-audit
 
 script:
-  - RAILS_ENV=test bundle exec rake db:test:prepare
+  # - RAILS_ENV=test bundle exec rake db:test:prepare
   - bundle exec rspec
   - bundle-audit check --update
+  - bundle exec rubocop

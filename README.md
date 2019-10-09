@@ -21,4 +21,10 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+### Quality
+
+Code analyzer and code formatter, run: 
+
+```
+rubocop
+```
