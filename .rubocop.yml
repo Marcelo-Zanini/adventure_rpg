@@ -1,0 +1,15 @@
+Documentation:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - '**/Rakefile'
+    - 'vendor/**/*'
+    - 'spec/**/*'
+    - 'tmp/**/*'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'Gemfile'
+    - 'config.ru'
+    - 'app/channels/application_cable/*'
