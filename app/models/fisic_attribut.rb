@@ -1,0 +1,2 @@
+class FisicAttribut < ApplicationRecord
+end
