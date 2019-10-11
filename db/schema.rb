@@ -10,13 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_11_232025) do
+ActiveRecord::Schema.define(version: 2019_10_11_233711) do
 
   create_table "fisic_attributs", force: :cascade do |t|
     t.integer "strength"
     t.integer "velocity"
     t.integer "dexterity"
     t.integer "max_health"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "intelectual_attributs", force: :cascade do |t|
+    t.integer "intelligence"
+    t.integer "ocultism"
+    t.integer "culture"
+    t.integer "reasoning"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
