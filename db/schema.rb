@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_11_233711) do
+ActiveRecord::Schema.define(version: 2019_10_12_000314) do
 
-  create_table "fisic_attributs", force: :cascade do |t|
+  create_table "fisic_attributes", force: :cascade do |t|
     t.integer "strength"
     t.integer "velocity"
     t.integer "dexterity"
@@ -21,11 +21,20 @@ ActiveRecord::Schema.define(version: 2019_10_11_233711) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "intelectual_attributs", force: :cascade do |t|
+  create_table "intelectual_attributes", force: :cascade do |t|
     t.integer "intelligence"
     t.integer "ocultism"
     t.integer "culture"
     t.integer "reasoning"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "spiritual_attributes", force: :cascade do |t|
+    t.integer "will"
+    t.integer "luck"
+    t.integer "initiative"
+    t.integer "sanity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

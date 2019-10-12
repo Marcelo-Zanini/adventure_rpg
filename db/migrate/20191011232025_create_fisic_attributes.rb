@@ -1,6 +1,6 @@
-class CreateFisicAttributs < ActiveRecord::Migration[5.2]
+class CreateFisicAttributes < ActiveRecord::Migration[5.2]
   def change
-    create_table :fisic_attributs do |t|
+    create_table :fisic_attributes do |t|
       t.integer :strength
       t.integer :velocity
       t.integer :dexterity
