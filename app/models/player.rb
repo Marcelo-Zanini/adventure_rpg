@@ -6,4 +6,8 @@ class Player < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  def titled_name
+    master? ? "Mestre #{name}" : "Jogador #{name}"
+  end
 end

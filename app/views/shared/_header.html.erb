@@ -1,3 +1,9 @@
 <header>
   <h1>Adventure RPG</h1>
+
+  <% if current_player %>
+    <p><%= "#{t(:welcome)} #{current_player.titled_name}" %></p>
+  <% else %>
+    <%= link_to t(:login), new_player_session_path %>
+  <% end %>
 </header>
