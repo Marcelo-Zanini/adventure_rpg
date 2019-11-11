@@ -1,0 +1,10 @@
+pt-BR:
+  activerecord:
+    models:
+      player:
+    attributes:
+      player:
+        name: Nome
+        email: Email
+        password: Senha
+        master: Mestre
