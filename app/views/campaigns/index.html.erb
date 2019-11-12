@@ -1,0 +1,11 @@
+<h3> <%= t(:your_campaigns) %> </h3>
+
+<% if @campaigns.empty? %>
+  <h5><%= t(:no_campaigns) %></h5>
+<% end %>
+
+<ul>
+<% @campaigns.each do |campaign| %>
+  <li><%= campaign.name %></li>
+<% end %>
+</ul>
