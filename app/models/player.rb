@@ -7,6 +7,8 @@ class Player < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :campaigns
+
   def titled_name
     master? ? "Mestre #{name}" : "Jogador #{name}"
   end

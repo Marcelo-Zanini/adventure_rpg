@@ -1,3 +1,7 @@
 
 <nav>
+  <% if current_player && current_player.master? %>
+    <%= link_to t(:my_campaigns), campaigns_path %>
+  <%end%>
+
 </nav>

@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_11_221752) do
+ActiveRecord::Schema.define(version: 2019_11_12_204645) do
+
+  create_table "campaigns", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.integer "player_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["player_id"], name: "index_campaigns_on_player_id"
+  end
 
   create_table "players", force: :cascade do |t|
     t.string "email", default: "", null: false
