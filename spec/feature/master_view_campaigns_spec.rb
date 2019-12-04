@@ -37,6 +37,7 @@ feature 'Master view campaigns' do
     expect(page).to have_css('li', text:'Campanha 1')
     expect(page).to have_css('li', text:'Campanha 2')
   end
+  
   scenario 'and is warned when no campaigns' do
     #arranje
     master = create(:master)
