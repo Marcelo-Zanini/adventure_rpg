@@ -1,11 +1,11 @@
 ---
 pt-BR:
-  #links
-  login: Login
-  my_campaigns: Minhas Campanhas
-  your_campaigns: Suas Campanhas
-  #messages
-  welcome_site: Bem Vindo ao nosso sistema de apoio a RPG
-  welcome: Bem Vindo
-  no_campaigns: Você ainda não possui nenhuma campanha
-  number_of_player: 'Número de Jogadores:'
+  link:
+    login: Login
+    my_campaigns: Minhas Campanhas
+  message:
+    welcome_site: Bem Vindo ao nosso sistema de apoio a RPG
+    welcome: Bem Vindo %{user}
+    no_campaigns: Você ainda não possui nenhuma campanha
+    your_campaigns: Suas Campanhas
+    number_of_players: 'Número de Jogadores: %{number}'
