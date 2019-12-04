@@ -9,6 +9,7 @@ FactoryBot.define do
     password  { "F4k3p455w0rd" }
     master { false }
   end
+
   factory :master, class: Player do
     sequence :email do |n|
       "master#{n}@generic.com"
