@@ -48,5 +48,4 @@ feature 'Master view campaigns' do
     expect(page).to have_css('h3', text:'Suas Campanhas')
     expect(page).to have_css('h5', text:'Você ainda não possui nenhuma campanha')
   end
-
 end
