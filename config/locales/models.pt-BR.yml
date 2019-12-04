@@ -1,10 +1,15 @@
 pt-BR:
   activerecord:
     models:
-      player:
+      player: Jogador
+      campaign: Campanha
     attributes:
       player:
         name: Nome
         email: Email
         password: Senha
         master: Mestre
+      campaign:
+        name: Nome da Campanha
+        player: Mestre
+        players_number: Número de Jogadores
