@@ -18,5 +18,4 @@ class CampaignsController < ApplicationController
   def authenticate_master!
     redirect_to root_path unless current_player.master?
   end
-
 end
